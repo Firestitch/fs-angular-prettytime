@@ -14,12 +14,21 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "app.filter:prettytime",
+      "shortName": "prettytime",
+      "type": "filter",
+      "moduleName": "app",
+      "shortDescription": "",
+      "keywords": "api app filter"
+    },
+    {
+      "section": "api",
       "id": "app.services:prettytimeService",
       "shortName": "prettytimeService",
       "type": "interface",
       "moduleName": "app",
       "shortDescription": "",
-      "keywords": "accepts api app days difference format formated interface method pretty return services time version"
+      "keywords": "abbreviated abbriviate accepts add ago api app days difference format formated interface measurement method numeric object pretty return rounded rounds services string time timestamp units version word"
     }
   ],
   "apis": {
