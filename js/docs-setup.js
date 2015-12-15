@@ -9,8 +9,8 @@ NG_DOCS={
       "shortName": "prettytime",
       "type": "filter",
       "moduleName": "app",
-      "shortDescription": "",
-      "keywords": "abbreviated abbriviate accepts add ago api app days difference duration filter format formated measurement method passing pretty return rounded rounds seconds specifies string time treats units version word"
+      "shortDescription": "Accepts a difference in time and return a pretty formated version ie. 6566533 = 7 days",
+      "keywords": "abbreviated abbriviate accepts add ago api app days difference duration filter formated measurement passing pretty return rounded rounds seconds specifies string time treats units version word"
     },
     {
       "section": "api",
