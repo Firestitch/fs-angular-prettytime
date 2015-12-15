@@ -9,8 +9,8 @@ NG_DOCS={
       "shortName": "prettytime",
       "type": "directive",
       "moduleName": "app",
-      "shortDescription": "",
-      "keywords": "api app directive directives"
+      "shortDescription": "The pretty time directive",
+      "keywords": "api app directive directives pretty time"
     },
     {
       "section": "api",
