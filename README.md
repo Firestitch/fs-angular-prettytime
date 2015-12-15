@@ -1,1 +1,1 @@
-# fs-angular-prettytime
+http://firestitch.github.io/fs-angular-prettytime/#/api
