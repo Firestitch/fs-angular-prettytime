@@ -5,21 +5,12 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
-      "id": "app.directives:prettytime",
-      "shortName": "prettytime",
-      "type": "directive",
-      "moduleName": "app",
-      "shortDescription": "The pretty time directive",
-      "keywords": "api app directive directives pretty time"
-    },
-    {
-      "section": "api",
       "id": "app.filter:prettytime",
       "shortName": "prettytime",
       "type": "filter",
       "moduleName": "app",
       "shortDescription": "",
-      "keywords": "api app filter"
+      "keywords": "abbreviated abbriviate accepts add ago api app days difference duration filter format formated measurement method passing pretty return rounded rounds seconds specifies string time treats units version word"
     },
     {
       "section": "api",
