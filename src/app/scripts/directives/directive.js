@@ -2,14 +2,6 @@
     'use strict';
 
 
-    /**
-     * @ngdoc directive
-     * @name app.directives:prettytime
-     * @description
-     * The pretty time directive
-     * @restrict E
-     */
-
      /*
 
     
