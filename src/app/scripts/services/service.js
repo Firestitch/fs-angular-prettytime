@@ -8,7 +8,7 @@
      * 
      */
 
-    angular.module('app')
+    angular.module('fs-angular-prettytime')
     .factory('prettytimeService', function (apiService) {
        
         var service = {        

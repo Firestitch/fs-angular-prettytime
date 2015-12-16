@@ -10,7 +10,7 @@ angular
     'ngAnimate',
     'ngStorage',
     'mdo-angular-cryptography',
-    'fs-prettytime'
+    'fs-angular-prettytime'
 ])
 .config(function ($routeProvider, $cryptoProvider, $mdThemingProvider, CONFIG) {
     $routeProvider

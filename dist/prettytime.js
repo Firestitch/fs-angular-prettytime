@@ -1,5 +1,12 @@
 (function () {
     'use strict';
+    
+	angular.module('fs-angular-prettytime',[]);
+
+
+})();
+(function () {
+    'use strict';
 
     /**
      * @ngdoc filter
@@ -11,7 +18,7 @@
      * @description Converts time to a readable format. ie: Duration 6566533 = 7 days
      */
 
-    angular.module('fs-prettytime', [])
+    angular.module('fs-angular-prettytime')
     .filter('prettytime', function(prettytimeService) {
       return function(value,round,abr,suffix,input) {
      
@@ -34,7 +41,7 @@
      /*
 
     
-    angular.module('fs-prettytime',[])
+    angular.module('fs-angular-prettytime')
     .directive('prettytime', function ($compile, $sce, $filter, prettytimeService) {
 
         return {
@@ -65,7 +72,7 @@
      * 
      */
 
-    angular.module('app')
+    angular.module('fs-angular-prettytime')
     .factory('prettytimeService', function (apiService) {
        
         var service = {        
@@ -169,7 +176,7 @@
     });
 })();
 
-angular.module('build').run(['$templateCache', function($templateCache) {
+angular.module('fs-angular-prettytime').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('views/directives/directive.html',

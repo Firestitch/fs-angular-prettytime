@@ -26,8 +26,6 @@ module.exports = function(grunt) {
             dist: 'dist'
         };
 
-        grunt.template.addDelimiters('handlebars-like-delimiters', '{{', '}}');
-
         // Define the configuration for all the tasks
         grunt.initConfig({
 
@@ -60,15 +58,18 @@ module.exports = function(grunt) {
                     ,
                     buildjs: {
                         files: ['app/scripts/{,*/}*.js'],
-                        tasks: ['clean:buildjs','ngtemplates:build','concat:build']  
+                        tasks: ['clean:buildjs','ngtemplates','concat:build']  
                     }
                 },
 
                 ngtemplates: {                   
-                    build: {
-                        cwd:    'app',
-                        src:    'views/directives/directive.html',
-                        dest:   '.tmp/directivetemplate.js'
+                    app: {
+                        options: {
+                            module: 'fs-angular-prettytime',
+                        },
+                        cwd:        'app',
+                        src:        'views/directives/directive.html',
+                        dest:       '.tmp/directivetemplate.js'
                     }
                 },
 
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
                      
                     },
                     build: {
-                      src: ['app/scripts/filters/filter.js','app/scripts/directives/directive.js','app/scripts/services/service.js','.tmp/directivetemplate.js'],
+                      src: ['app/scripts/modules/module.js','app/scripts/filters/filter.js','app/scripts/directives/directive.js','app/scripts/services/service.js','.tmp/directivetemplate.js'],
                       dest: '../dist/prettytime.js',
                     },
                 },
@@ -340,12 +341,7 @@ module.exports = function(grunt) {
                  return grunt.task.run(["ngdocs","connect:docs:keepalive","watch"]);
             });
 
-            grunt.registerTask('serve', 'Compile then start a connect web server', function(target) {
-
-                if (arguments.length === 0) {
-                    grunt.log.error('Please specify a target to serve. Options: serve:local');
-                    return false;
-                }
+            grunt.registerTask('default', '', function(target) {
 
                return grunt.task.run([
                     'ngconstant:local',

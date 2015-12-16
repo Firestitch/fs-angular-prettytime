@@ -5,7 +5,7 @@
      /*
 
     
-    angular.module('fs-prettytime',[])
+    angular.module('fs-angular-prettytime')
     .directive('prettytime', function ($compile, $sce, $filter, prettytimeService) {
 
         return {

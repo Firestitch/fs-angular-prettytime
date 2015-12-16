@@ -11,7 +11,7 @@
      * @description Converts time to a readable format. ie: Duration 6566533 = 7 days
      */
 
-    angular.module('fs-prettytime', [])
+    angular.module('fs-angular-prettytime')
     .filter('prettytime', function(prettytimeService) {
       return function(value,round,abr,suffix,input) {
      
