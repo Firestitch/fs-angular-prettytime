@@ -4,8 +4,7 @@
     /**
      * @ngdoc interface
      * @name app.services:prettytimeService
-     * @description
-     * 
+     * @description Demo: <a href="http://firestitch.github.io/fs-angular-demos/#/prettytime">http://firestitch.github.io/fs-angular-demos/#/prettytime</a>
      */
 
     angular.module('fs-angular-prettytime')
