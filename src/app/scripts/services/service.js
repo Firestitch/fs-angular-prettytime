@@ -9,7 +9,7 @@
      */
 
     angular.module('fs-angular-prettytime')
-    .factory('prettytimeService', function (apiService) {
+    .factory('prettytimeService', function () {
        
         var service = {        
             format:format,

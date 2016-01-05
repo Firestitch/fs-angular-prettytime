@@ -1,22 +1,71 @@
 
-<div>
+<div class="example">
+	<code ng-non-bindable>
+	    $scope.yesterday = new Date();<br>
+	    $scope.yesterday.setDate($scope.yesterday.getDate() - 1);<br><br>
+		{{yesterday|prettytime:false:true:false}}
+	</code>
+	{{yesterday|prettytime:false:true:false}}
+</div>
+
+<div class="example">
+	<code ng-non-bindable>
+	    $scope.lastweek = new Date();<br>
+	    $scope.lastweek.setDate($scope.lastweek.getDate() - 7);<br>
+	    $scope.weekago = $filter('prettytime')($scope.lastweek,false,true,false));
+	</code>
+	{{weekago}}
+</div>
+
+<div class="example">
+	<code ng-non-bindable>
+	    $scope.lastmonth = new Date();<br>
+	    $scope.lastmonth.setMonth($scope.lastmonth.getMonth() - 1);<br>
+	    $scope.lastmonth = $scope.lastmonth.getTime()/1000;<br><br>
+	    {{lastmonth|prettytime:false:true:true}}
+	</code>
+	{{lastmonth|prettytime:false:true:true}}
+</div>
+
+<div class="example">
+	<code ng-non-bindable>
+		{{2344|prettytime:false:true:true:'duration'}}
+	</code>
 	{{2344|prettytime:false:true:true:'duration'}}
 </div>
 
-<div>
+
+<div class="example">
+	<code ng-non-bindable>
+		{{23|prettytime:false:true:true:'duration'}}
+	</code>
 	{{23|prettytime:false:true:true:'duration'}}
 </div>
 
-<div>
+
+<div class="example">
+	<code ng-non-bindable>
+		{{12334235|prettytime:false:true:false:'duration'}}
+	</code>
 	{{12334235|prettytime:false:true:false:'duration'}}
 </div>
 
-<div>
+
+<div class="example">
+	<code ng-non-bindable>
+		{{4445|prettytime:false:true:false:'duration'}}
+</div>
+	</code>
 	{{4445|prettytime:false:true:false:'duration'}}
 </div>
 
-<div>
-	{{date|prettytime:false:true:false}}
-</div>
+<style>
+.example {
+	margin-top: 50px;
+}
 
-
+.example code {
+	display: block;
+	margin-bottom: 5px;
+}
+</style>

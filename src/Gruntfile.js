@@ -326,7 +326,7 @@ module.exports = function(grunt) {
                   options: {
                     dest: '../../gh-pages',
                     html5Mode: false,
-                    startPage: '/',
+                    startPage: '/api',
                     title: "Documentation",
                     titleLink: "/",
                     bestMatch: true,
@@ -349,6 +349,7 @@ module.exports = function(grunt) {
                     'concurrent:server',
                     'autoprefixer',
                     'connect:local',
+                    'connect:docs',
                     'watch'
                 ]);
             });
