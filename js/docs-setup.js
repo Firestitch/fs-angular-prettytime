@@ -18,8 +18,8 @@ NG_DOCS={
       "shortName": "prettytimeService",
       "type": "interface",
       "moduleName": "app",
-      "shortDescription": "",
-      "keywords": "abbreviated abbriviate accepts add ago api app days difference format formated interface measurement method numeric object pretty return rounded rounds services string time timestamp units version word"
+      "shortDescription": "Demo: http://firestitch.github.io/fs-angular-demos/#/prettytime",
+      "keywords": "abbreviated abbriviate accepts add ago api app days demo difference format formated github href http interface io measurement method numeric object pretty return rounded rounds services string time timestamp units version word"
     }
   ],
   "apis": {
