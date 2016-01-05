@@ -10,7 +10,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "app",
       "shortDescription": "Converts time to a readable format. ie: Duration 6566533 = 7 days",
-      "keywords": "abbreviated abbriviate add ago api app converts days duration filter format measurement pretty readable rounded rounds seconds specifies string time units word"
+      "keywords": "abbreviated abbriviate add ago api app converts days duration filter format measurement object pretty readable represented rounded rounds seconds set specifies string time timestamp type units unix word"
     },
     {
       "section": "api",
@@ -27,7 +27,7 @@ NG_DOCS={
   },
   "html5Mode": false,
   "editExample": true,
-  "startPage": "/",
+  "startPage": "/api",
   "scripts": [
     "angular.min.js"
   ]
