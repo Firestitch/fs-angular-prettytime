@@ -9,18 +9,17 @@
      * @param {bool=} [abr=true] Abbriviate the units of measurement. ie: 5d (abbreviated) 5 days (not abbreviated) 
      * @param {bool=} [suffix=false] add the word 'ago' or 'from now' to the end of the pretty string
      * @param {string=} [type=time] Specifies if the time is a date/timestamp (time) or the duration in seconds (duration).
-     * @description Demo: <a href="http://firestitch.github.io/fs-angular-demos/#/prettytime">http://firestitch.github.io/fs-angular-demos/#/prettytime</a>
      */
 
     angular.module('fs-angular-prettytime')
-    .filter('prettytime', function(prettytimeService) {
+    .filter('prettytime', function(fsPrettytime) {
       return function(value,round,abr,suffix,type) {
      
         if(type=='duration') {
-            value = prettytimeService.format(time,round,abr,suffix,type);
+            value = fsPrettytime.format(time,round,abr,suffix,type);
         
         } else {
-          value = prettytimeService.formatTimestamp(time,round,abr,suffix,type);
+          value = fsPrettytime.formatTimestamp(time,round,abr,suffix,type);
         }
 
         return value;

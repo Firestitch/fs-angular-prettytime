@@ -2,13 +2,12 @@
     'use strict';
 
     /**
-     * @ngdoc interface
-     * @name app.services:prettytimeService
-     * @description Demo: <a href="http://firestitch.github.io/fs-angular-demos/#/prettytime">http://firestitch.github.io/fs-angular-demos/#/prettytime</a>
+     * @ngdoc service
+     * @name app.services:fsPrettytime
      */
 
     angular.module('fs-angular-prettytime')
-    .factory('prettytimeService', function () {
+    .factory('fsPrettytime', function () {
        
         var service = {        
             format:format,
@@ -26,7 +25,7 @@
         /**
          * @ngdoc method
          * @name format
-         * @methodOf app.services:prettytimeService
+         * @methodOf app.services:fsPrettytime
          * @param {number|date} timestamp A numeric timestamp or a Date object
          * @param {bool=} [round=true] Rounds the pretty time. ie: 5d 12h (not rounded) 5d (rounded) 
          * @param {bool=} [abr=true] Abbriviate the units of measurement. ie: 5d (abbreviated) 5 days (not abbreviated) 
@@ -46,7 +45,7 @@
         /**
          * @ngdoc method
          * @name format
-         * @methodOf app.services:prettytimeService
+         * @methodOf app.services:fsPrettytime
          * @param {number} timestamp A numeric timestamp
          * @param {bool=} [round=true] Rounds the pretty time. ie: 5d 12h (not rounded) 5d (rounded) 
          * @param {bool=} [abr=true] Abbriviate the units of measurement. ie: 5d (abbreviated) 5 days (not abbreviated) 
